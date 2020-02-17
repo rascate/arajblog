@@ -5,15 +5,27 @@ import Nav from "../components/nav";
 const Home: React.FC = () => (
   <div>
     <Head>
-      <title>araj</title>
+      <title>araj blog</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <Nav />
 
     <div className="hero">
-      <h1 className="title">hi</h1>
+      <h1 className="title">araj</h1>
     </div>
+
+    <ul className="accounts">
+      <li>
+        <a href="https://github.com/rascate">github</a>
+      </li>
+      <li>
+        <a href="mailto:ja.create@gmail.com">email</a>
+      </li>
+      <li>
+        <a href="https://qiita.com/araj">qiita</a>
+      </li>
+    </ul>
 
     <style jsx>{`
       .hero {
@@ -38,27 +50,17 @@ const Home: React.FC = () => (
         flex-direction: row;
         justify-content: space-around;
       }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
+      .accounts {
+        max-width: 880px;
+        margin: 80px auto 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
       }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
+      a {
         color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
+        text-decoration: none;
         font-size: 13px;
-        color: #333;
       }
     `}</style>
   </div>
